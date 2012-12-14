@@ -1,0 +1,34 @@
+﻿@model MasonryQuantities.Models.MasonryCalculator
+
+@{
+    ViewBag.Title = "Confirm";
+    double numb = ViewBag.nmb;
+    double mortam = ViewBag.Mortamt;
+}
+
+<h2>Confirm</h2>
+
+<fieldset>
+    <legend>MasonryCalculator</legend>
+
+    <div class="display-label">Block type selected: </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BlockType)
+    </div>
+
+    <div class="display-label">Wall Height is:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WallHeight)
+    </div>
+
+    <div class="display-label">Wall Length is:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WallLength)
+    </div>
+    <div class="display-label">Number of blocks required: @Html.DisplayFor(c => numb)</div>
+    <div class="display-label">Amount of mortar required (m3): @Html.DisplayFor(c => mortam)</div>
+    
+ 
+ </fieldset>
+  
+ @Html.ActionLink("Calculate another quantity", "Index")
