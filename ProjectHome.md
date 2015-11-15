@@ -1,0 +1,1 @@
+This application calculates the quantities of materials required for completing specific tasks during the construction of a building.
